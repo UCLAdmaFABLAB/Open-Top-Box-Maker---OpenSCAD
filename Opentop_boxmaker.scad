@@ -11,21 +11,23 @@
 
 // This makes open top box with varying edge notches. We use this for making storage bins.
 
+// OpenSCAD seems to use mm as units when exporting PDFs. This is very convenient for us at the DMA Fab Lab.
+
 // EDIT THESE:
-width = 14.25; // x measurement
-height = 7.625; // z measurement
-depth = 17.125; // y measurement
-thickness = 0.452; // thickness of material
-toolDiameter = 0.25; // toolDiameter used for panel placement only, not for fillets
+width = 362.0; // x measurement
+height = 194.0; // z measurement
+depth = 435.0; // y measurement
+thickness = 11.5; // thickness of material
+toolDiameter = 6.35; // toolDiameter used for panel placement only, not for fillets
 
 notchLengthProportion = 4.0; // change to scale notches bigger or smaller
 
 // handle details
 makeHandle = true;
 
-handleLength = 6.0;
-handleHeight = 1.25;
-handleDistanceFromEdge = 1.0;
+handleLength = 152.0;
+handleHeight = 31.75;
+handleDistanceFromEdge = 25.4;
 
 // fillet section
 // useful for cnc
@@ -37,7 +39,7 @@ makeFillets = true;
 // 2 = set in the side or bottom
 filletStyle = 0;
 
-filletDiameter = 0.255;
+filletDiameter = 6.5;
 centeredFilletOffset = sin(45) * (filletDiameter/2.0);
 
 filletCircleResolution = 50;
